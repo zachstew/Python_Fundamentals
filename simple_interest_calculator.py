@@ -17,12 +17,9 @@ def get_positive_number(prompt):
     while True:
         try:
             value = float(input(prompt))
-
             if value < 0:
                 raise ValueError("The inputed value cannot be negative.")
-
             return value
-
         except ValueError as error:
             print(f"Invalid input: {error}")
             print("Please enter a valid positive number.\n")
@@ -30,10 +27,8 @@ def get_positive_number(prompt):
 # Get and clean the user's name
 while True:
     name = input("Enter your name: ").strip()
-
     if name:
         break
-
     print("Name cannot be empty. Please try again.")
 
 # String transformation: convert the name to title case
